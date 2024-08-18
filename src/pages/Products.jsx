@@ -34,6 +34,7 @@ const Products = () => {
   return (
     <>
       <ProductsContainer />
+      <PaginationContainer />
     </>
   );
 };
