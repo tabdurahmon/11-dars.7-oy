@@ -4,6 +4,9 @@ const productionUrl = "https://strapi-store-server.onrender.com/api";
 
 export const customFetch = axios.create({
   baseURL: productionUrl,
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 export const formatPrice = (price) => {
