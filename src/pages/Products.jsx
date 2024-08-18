@@ -7,16 +7,7 @@ const allProductsQuery = (queryParams) => {
     queryParams;
 
   return {
-    queryKey: [
-      "products",
-      search ?? "",
-      category ?? "all",
-      company ?? "all",
-      sort ?? "a-z",
-      price ?? 100000,
-      shipping ?? false,
-      page ?? 1,
-    ],
+    queryKey: ["products"],
     queryFn: () =>
       customFetch(url, {
         params: queryParams,

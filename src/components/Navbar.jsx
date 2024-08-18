@@ -19,7 +19,6 @@ const Navbar = () => {
     <nav className="bg-base-200">
       <div className="navbar align-element">
         <div className="navbar-start">
-          {/* TITLE */}
           <NavLink
             to="/"
             className="hidden lg:flex btn btn-primary text-3xl items-center"
@@ -44,15 +43,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {/* THEME SETUP */}
           <label className="swap swap-rotate">
-            <input type="checkbox" onChange={handleTheme} />
-            {/* sun icon*/}
+            <input type="checkbox" onChange />
             <BsSunFill className="swap-on h-4 w-4" />
-            {/* moon icon*/}
             <BsMoonFill className="swap-off h-4 w-4" />
           </label>
-          {/* CART LINK */}
           <NavLink to="/cart" className="btn btn-ghost btn-circle btn-md ml-4">
             <div className="indicator">
               <BsCart3 className="h-6 w-6" />
